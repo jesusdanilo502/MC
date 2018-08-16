@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	/*background-size: 100vw 100vh;*/
+	/*background-attachment:fixed;*/
+	background: url(../img/fondo.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: "Roboto";
+}
+
+form{
+	/*width:450px;*/
+	
+	background: rgba(0,0,0,.6);
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+h2{
+	
+	font-weight: normal;
+	font-family: sans-serif;
+	color: #ff851b;
+	text-align: center;
+	padding: 14px 0;
+}
+
+.intro{
+	text-align:center;
+	margin-bottom: 40px;
+}
+
+
+input, textarea{
+	 
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom:  2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+
+}
+
+textarea{
+	min-height: 140px;
+	max-height: 200px;
+	max-width: 100%;
+}
+
+#boton{
+	/*background: #303F9F;*/
+	width: 100%;
+    font-family: Roboto;
+    outline:  none;
+    background: #ff851b;
+    font-size:16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition:  all .5s ease;
+
+}
+
+#boton:hover{
+	cursor: pointer;
+	background: #f29718;
+	
+}
+
+.info{
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
