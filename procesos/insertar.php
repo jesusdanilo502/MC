@@ -8,7 +8,7 @@
 	$espesor=$_POST['txtespesor'];
 	$precio=$_POST['txtprecio'];
 	$mensaje=$_POST['txtmensaje'];
-
+    /* capturo datos en arreglo */
 	$datos=array(
 			$marca,
             $color,
