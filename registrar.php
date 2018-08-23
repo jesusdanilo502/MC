@@ -25,26 +25,29 @@
   <div class="container">
   
   
-<form action="enviar.php" method="post">
+  <form action="Procesos/insertar.php" method="post">
   <h2>Registro Productos</h2>
-  
-  
+  <a class="button button3" href="index.php">Consultar...</a>
+ 
   <hr>
   
+ 
+ 
+</ul>
   <div class="row">
       <div class="col-xs-12 col-sm-12 col-lg-12">
-   
+      
         
-        <input  type="text" name="nombre" placeholder="Marca..." required>
+        <input  type="text" name="txtmarca" placeholder="Marca..." required>
         
-        <input type="text" name="correo" placeholder="Color..." required>
+        <input type="text" name="txtcolor" placeholder="Color..." required>
          
-        <input type="text" name="telefono" placeholder="Medida..." required>
+        <input type="text" name="txtmedida" placeholder="Medida..." required>
           
-         <input type="text" name="empresa" placeholder="Espesor...">
-         <input type="text" name="empresa" placeholder="Precio...">
+         <input type="text" name="txtespesor" placeholder="Espesor...">
+         <input type="text" name="txtprecio" placeholder="Precio...">
           
-        <textarea id="area" name="mensaje" placeholder="Escriba aqui espesificaciones tecnicas" required></textarea>
+        <textarea id="area" name="txtmensaje" placeholder="Escriba aqui espesificaciones tecnicas" required></textarea>
   	
     		<input type="submit" value="Enviar" id="boton">
       </div>

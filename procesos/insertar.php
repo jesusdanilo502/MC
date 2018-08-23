@@ -9,19 +9,12 @@
 	$precio=$_POST['txtprecio'];
 	$mensaje=$_POST['txtmensaje'];
     /* capturo datos en arreglo */
-	$datos=array(
-			$marca,
-            $color,
-            $medida,
-            $espesor,
-            $precio,
-            $mensaje
-				);
+	$datos=array($marca,$color,$medida,$espesor,$precio,$mensaje);
 	$obj= new metodos();
 	if($obj->insertarDatos($datos)==1){
-		header("location:../index.php");
+		header("location:../registrar.php");
 	}else{
-		echo "fallo al agregar";
+		echo "Rerencia object";
 	}
 
  ?>

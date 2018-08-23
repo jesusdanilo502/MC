@@ -23,30 +23,21 @@
   
   
   <div class="container">
-  
-  
-  <form action="procesos/insertar.php" method="post">
-  <h2>Registro Productos</h2>
-  
-  
+ 
+  <form accept-charset="utf-8" method="POST">
+  <a class="button button3" href="registrar.php">Registrar Producto</a>
   <hr>
-  
+
   <div class="row">
       <div class="col-xs-12 col-sm-12 col-lg-12">
-   
-        
-        <input  type="text" name="txtmarca" placeholder="Marca..." required>
-        
-        <input type="text" name="txtcolor" placeholder="Color..." required>
-         
-        <input type="text" name="txtmedida" placeholder="Medida..." required>
-          
-         <input type="text" name="txtespesor" placeholder="Espesor...">
-         <input type="text" name="txtprecio" placeholder="Precio...">
-          
-        <textarea id="area" name="txtmensaje" placeholder="Escriba aqui espesificaciones tecnicas" required></textarea>
-  	
-    		<input type="submit" value="Enviar" id="boton">
+      
+     
+ 
+       <input type="text" placeholder="Bucar Producto......" name="busqueda" id="busqueda" value="" placeholder="" maxlength="30" autocomplete="off" onKeyUp="buscar();" />
+      </form>
+
+      <div id="resultadoBusqueda"></div>
+
       </div>
       
     </div>
@@ -65,5 +56,6 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<!-- <script src="js/bootstrap.js"></script> -->
   <script src="js/bootstrap-3.3.7.js"></script>
+  <script src="buscar.js"></script>
 </body>
 </html>

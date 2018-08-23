@@ -6,13 +6,13 @@
      private $password="";
 
      public function conexion(){
-         $conexion= mysqli_connect(
-             $this-> servidor,
-             $this-> usuario,
-             $this-> password,
-             $this-> bd);
+         $conexion= mysqli_connect($this-> servidor,$this-> usuario,$this-> password,$this-> bd);
          return $conexion;
      }
  }
 
 ?>
+      
+
+
+    
