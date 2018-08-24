@@ -11,10 +11,11 @@
     /* capturo datos en arreglo */
 	$datos=array($marca,$color,$medida,$espesor,$precio,$mensaje);
 	$obj= new metodos();
-	if($obj->insertarDatos($datos)==1){
+	$response = $obj->insertarDatos($datos);
+	if($response[0]){
 		header("location:../registrar.php");
 	}else{
-		echo "Rerencia object";
+		echo "<p>Hubo un error!</p><br>".$response[1];
 	}
 
  ?>

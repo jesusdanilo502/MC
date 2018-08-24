@@ -31,12 +31,12 @@ if (isset($consultaBusqueda)) {
 
 	$cb= new metodos();
 	$oso = $cb->consultaDatos($consultaBusqueda);
-	//if($oso==1){
-		if($filas = mysqli_num_rows($oso) != 0){
+	if($oso[0]){
+		if(mysqli_num_rows($oso[0]) != 0){
 			echo 'Resultados para <strong>'.$consultaBusqueda.'</strong>';
 
 			//La variable $resultado contiene el array que se genera en la consulta, así que obtenemos los datos y los mostramos en un bucle
-			while($resultados = mysqli_fetch_array($oso)) {				
+			while($resultados = mysqli_fetch_array($oso[0])) {				
 				$marca=$resultados['marca'];
 				$color=$resultados['color'];
 				$medida=$resultados['medida'];
@@ -61,9 +61,9 @@ if (isset($consultaBusqueda)) {
 		}else{
 			$mensaje_result = "<p>No hay ningún para este producto</p>";
 		}
-	/*}else{
-		$mensaje_result = "<p>Hubo un error!</p>";
-	}*/
+	}else{
+		$mensaje_result = "<p>Hubo un error!</p><br>".$oso[1];
+	}
    
 /*
 	//Obtiene la cantidad de filas que hay en la consulta
