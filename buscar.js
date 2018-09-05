@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 function buscar() {
-    var textoBusqueda = $("input#busqueda").val();
+    var textoBusqueda = $("#busqueda").val();
 
     if (textoBusqueda != "") {
         $.post("procesos/buscar.php", { valorBusqueda: textoBusqueda }, function (mensaje) {
