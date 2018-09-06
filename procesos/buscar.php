@@ -41,7 +41,7 @@ if (isset($consultaBusqueda)) {
 				$color=$resultados['color'];
 				$medida=$resultados['medida'];
 				$espesor=$resultados['espesor'];
-				$precio=$resultados['precio'];
+				$pPrecio=$resultados['precio'];
 				$mensaje=$resultados['notas'];
 
 				$fomatPrecio = number_format($precio,0);
@@ -65,41 +65,7 @@ if (isset($consultaBusqueda)) {
 		$mensaje_result = "<p>Hubo un error!</p><br>".$oso[1];
 	}
    
-/*
-	//Obtiene la cantidad de filas que hay en la consulta
-	$filas = mysqli_num_rows($cb);
 
-	//Si no existe ninguna fila que sea igual a $consultaBusqueda, entonces mostramos el siguiente mensaje
-	if ($filas === 0) {
-		$mensaje = "<p>No hay ningún usuario con ese nombre y/o apellido</p>";
-	} else {
-		//Si existe alguna fila que sea igual a $consultaBusqueda, entonces mostramos el siguiente mensaje
-		echo 'Resultados para <strong>'.$consultaBusqueda.'</strong>';
-
-		//La variable $resultado contiene el array que se genera en la consulta, así que obtenemos los datos y los mostramos en un bucle
-		while($resultados = mysqli_fetch_array($cb)) {
-			
-            $marca=$resultados['marca'];
-	        $color=$resultados['color'];
-	        $medida=$resultados['medida'];
-	        $espesor=$resultados['espesor'];
-	        $precio=$resultados['precio'];
-	        $mensaje=$resultados['mensaje'];
-			//Output
-			$mensaje .= '
-			<p>
-			<strong>Nombre:</strong> ' . $marca . '<br>
-			<strong>Apellido:</strong> ' . $color . '<br>
-			<strong>Edad:</strong> ' . $medida . '<br>
-			<strong>Edad:</strong> ' . $espesor . '<br>
-			<strong>Edad:</strong> ' . $precio . '<br>
-			<strong>Edad:</strong> ' . $mensaje . '<br>
-			</p>';
-
-		};//Fin while $resultados
-
-	}; //Fin else $filas
-*/
 };//Fin isset $consultaBusqueda
 
 //Devolvemos el mensaje que tomará jQuery
